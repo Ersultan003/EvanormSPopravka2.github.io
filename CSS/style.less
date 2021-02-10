@@ -1,0 +1,91 @@
+// compress: true
+@import "vars";
+@import "fonts.css";
+
+
+
+body {
+    margin: 0;
+    font-family: "MuseoSansMedium";
+    font-size: 1rem;
+    color: @black;
+    font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "MuseoSansBlack";
+    font-size: 32px;
+    line-height: 38px;
+    color: @pink;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 220px;
+    height: 46px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 44px;
+    background: @pink;
+    font-family: "MuseoSansBlack";
+    color: @white;
+    font-size: 16px;
+    padding-bottom: 12px;
+    text-transform: uppercase;
+}
+
+// Blocks
+@import "blocks/header.less";
+@import "blocks/b2.less";
+@import "blocks/b3.less";
+@import "blocks/b4.less";
+@import "blocks/b5.less";
+@import "blocks/b6.less";
+@import "blocks/b7.less";
+@import "blocks/footer.less";
+
+
+
+
+
+
+
+
+
+
+//Media 
+
+
+@media screen and (max-width:425px) {
+    .title {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}

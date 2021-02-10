@@ -1,0 +1,188 @@
+// main: ..//style.less
+
+
+
+
+.header {
+    height: 739px;
+    background: url(.././images/dest/headerbg.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+
+    .container {
+        max-width: 1654px;
+        margin: 0 auto;
+    }
+
+    .header__inner {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 200px;
+
+        .header__left {
+            width: 562px;
+
+            h2 {
+                font-size: 52px;
+                line-height: 62px;
+                color: @pink;
+                font-family: "MuseoSansBlack";
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+
+            h3 {
+                font-size: 27px;
+                line-height: 29px;
+                color: @pink;
+                margin-bottom: 30px;
+            }
+
+            p {
+                display: flex;
+                margin-bottom: 20px;
+                font-size: 19px;
+                line-height: 137%;
+                opacity: 75%;
+
+                span {
+                    font-size: 40px;
+                    color: @pink;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .header__right {
+            margin-right: 556px;
+
+            .form {
+                width: 358px;
+                height: 384px;
+                text-align: center;
+                background: @white;
+                box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 20px;
+                padding: 30px;
+
+                p {
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin-bottom: 20px;
+
+                    strong {
+                        font-family: "MuseoSansBlack";
+                    }
+                }
+
+                input {
+                    width: 307px;
+                    height: 48px;
+                    text-align: center;
+                    border: none;
+                    background: @gray-light;
+                    margin-bottom: 16px;
+                    font-family: "MuseoSansMedium";
+                }
+
+                select {
+                    width: 307px;
+                    height: 48px;
+                    text-align: center;
+                    border: none;
+                    background: @gray-light;
+                    margin-bottom: 16px;
+                    color: @brown;
+                    font-family: "MuseoSansMedium";
+                    padding-left: 120px;
+
+                }
+
+
+            }
+        }
+    }
+}
+
+
+
+// Media 
+@media screen and (max-width:1440px) {
+    .header {
+        .header__inner {
+            width: 1000px;
+            margin: 0 auto;
+
+            .header__right {
+                margin-right: 0;
+
+            }
+
+            .header__left {
+                margin-right: 0;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .header {
+        .header__inner {
+            width: 800px;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .header {
+        background-image: none;
+        height: 900px;
+
+        .header__inner {
+            padding-top: 30px;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 500px;
+
+            .header__left {
+                width: auto;
+            }
+
+            .header__right {
+                width: 400px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+}
+
+
+
+@media screen and (max-width:425px) {
+    .header {
+        height: 950px;
+
+        .header__inner {
+            width: 300px;
+
+            .header__right {
+                width: 300px;
+
+                .form {
+                    width: 320px;
+
+                    input {
+                        width: 250px;
+                    }
+
+                    select {
+                        width: 250px;
+                        padding-left: 90px;
+                    }
+                }
+            }
+        }
+    }
+}

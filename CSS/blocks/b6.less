@@ -1,0 +1,76 @@
+// main: ..//style.less
+
+.b6 {
+    margin-top: 100px;
+    background: url(.././images/dest/b6bg.jpg);
+    background-repeat: no-repeat;
+    height: 1043px;
+    background-position: right;
+    background-size: cover;
+
+    .b6__inner {
+        padding-top: 300px;
+        width: 470px;
+
+
+        h2 {
+            color: @pink;
+            font-size: 31px;
+            line-height: 31px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 22px;
+            line-height: 24px;
+            opacity: 55%;
+            margin-bottom: 25px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 21px;
+
+            strong {
+                font-family: "MuseoSansBlack";
+            }
+        }
+    }
+}
+
+
+
+// Media
+@media screen and (max-width:1440px) {
+    .b6 {
+        height: 300px;
+        background-image: none;
+
+
+        .b6__inner {
+            padding-top: 0;
+            width: 500px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    .b6 {
+        height: 350px;
+
+        .b6__inner {
+            width: 400px;
+        }
+    }
+}
+
+@media screen and (max-width:375px) {
+    .b6 {
+        height: 420px;
+
+        .b6__inner {
+            width: 300px;
+        }
+    }
+}
